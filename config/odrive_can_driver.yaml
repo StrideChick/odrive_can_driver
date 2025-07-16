@@ -1,0 +1,19 @@
+# ODrive CAN Driver Configuration
+odrive_can_driver:
+  ros__parameters:
+    # CAN interface settings
+    can_interface: "can0"
+    
+    # ODrive node IDs
+    left_wheel_node_id: 1
+    right_wheel_node_id: 2
+    
+    # Robot physical parameters
+    wheel_base: 0.30        # Distance between wheels [m]
+    wheel_radius: 0.05      # Wheel radius [m]
+    
+    # Velocity limits
+    max_velocity: 1.0       # Maximum linear velocity [m/s]
+    
+    # Safety settings
+    velocity_timeout: 1.0   # Velocity command timeout [s]
